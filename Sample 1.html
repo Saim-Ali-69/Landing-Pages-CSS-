@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+/* Add a black background color to the top navigation */
+.nav {
+  background-color: yellowgreen;
+  overflow: hidden;
+  height: 50px;
+}
+
+/* Style the links inside the navigation bar */
+.nav a {
+  float:left;
+  color: black;
+  margin-top: -10px;
+  margin-left: 60px;
+  text-align: center;
+  padding:5px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Change the color of links on hover */
+.nav a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.nav a.active {
+  background-color:lightseagreen;
+  color: black;
+}
+.banner-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;   
+}
+.banner-text{
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+    font-size: 20px;
+    word-spacing: 5px;
+}
+.banner-text button{
+    color: blue;
+    font-size: 20px;
+}
+.banner2-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("1.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    margin-right:auto;
+    height: 500px;
+    width: 1015px;
+}
+.banner2-text{
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    word-spacing: 5px;
+}
+.card1 {
+  box-shadow: 3px 5px 8px 0 rgba(0,0,0,0.8);
+  transition: 0.3s;
+  width: 310px;
+  height:350px;
+  border-radius:5px;
+  margin-left: 14%;
+}
+
+.card1:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+
+.container1 {
+  margin-top:-15px;
+  padding: 5px;
+  font-size: 13px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.card1 img{
+  margin: 15px;
+  margin-top: -5px;
+  border-radius: 8px;
+}
+.card2 {
+  box-shadow: 3px 5px 8px 0 rgba(0,0,0,0.8);
+  transition: 0.3s;
+  width: 310px;
+  height:348px;
+  border-radius:5px;
+  margin-left:350px;
+  margin-top:-336px;
+}
+.card2:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+.container2 {
+  margin-top:-15px;
+  padding:5px;
+  font-size: 13px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+.card2 img{
+  margin: 15px;
+  margin-top:15px;
+  border-radius: 8px;
+}
+.card3 {
+  box-shadow: 3px 5px 8px 0 rgba(0,0,0,0.8);
+  transition: 0.3s;
+  width: 310px;
+  height:348px;
+  margin-left:350px;
+  border-radius: 5px;
+  margin-top:-340px;
+}
+.card3:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+.container3 {
+  margin-top:-15px;
+  padding: 5px;
+  font-size: 13px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+.card3 img{
+  margin: 15px;
+  margin-top:15px;
+  border-radius: 8px;
+}
+.about {
+  box-shadow: 3px 5px 8px 0 rgba(0,0,0,0.8);
+  transition: 0.3s;
+  width: 300px;
+  height: 200px;
+  border-radius:5px;
+  margin-left:30px;
+  font-size:15px;
+}
+.history {
+  box-shadow: 3px 5px 8px 0 rgba(0,0,0,0.8);
+  transition: 0.3s;
+  width: 300px;
+  height:200px;
+  border-radius:5px;
+  margin-top: -202px;
+  margin-left: 330px;
+  font-size: 15px;
+}
+.csr {
+  box-shadow: 3px 5px 8px 0 rgba(0,0,0,0.8);
+  transition: 0.3s;
+  width: 300px;
+  height:200px;
+  border-radius:5px;
+  margin-top:-216px;
+  margin-left: 655px;
+  font-size: 15px;
+}
+#myBtn{
+  border-radius: 10px;
+  color: black;
+  font-weight:bold;
+  background-color:yellow;
+}
+.op {
+  box-shadow: 3px 5px 8px 0 rgba(0,0,0,0.8);
+  transition: 0.3s;
+  width: 300px;
+  height: 300px;
+  border-radius:5px;
+  margin-left:-150px;
+  font-size:12px;
+  color: black;
+}
+.cd {
+  box-shadow: 3px 5px 8px 0 rgba(0,0,0,0.8);
+  transition: 0.3s;
+  width: 300px;
+  height:300px;
+  border-radius:5px;
+  margin-top:-330px;
+  margin-left:330px;
+  font-size: 12px;
+  color: black;
+}
+.en {
+  box-shadow: 3px 5px 8px 0 rgba(0,0,0,0.8);
+  transition: 0.3s;
+  width: 300px;
+  height:300px;
+  border-radius:5px;
+  margin-top:-317px;
+  margin-left: 660px;
+  font-size: 12px;
+  color: black;
+}
+.sa {
+  box-shadow: 3px 5px 8px 0 rgba(0,0,0,0.8);
+  transition: 0.3s;
+  width: 300px;
+  height:300px;
+  border-radius:5px;
+  margin-top:-285px;
+  margin-left:330px;
+  font-size: 12px;
+  color: black;
+}
+.brands{
+  margin-left:-610px;
+  background-color: lavender;
+  width: 1200px;
+  height:150px;  
+}
+.brands h2{
+  padding-top:30px;
+}
+.container{
+  background-color:lavender;
+  margin: 10px;
+  display:flex;
+  justify-content: center;
+}
+.container-item{
+  background-color:blue;
+  color: black;
+  font-size: 15px;
+  text-align: center;
+  width:100px;
+  line-height:30px;
+  margin:10px;
+}
+footer{
+  justify-content: center;
+  width: 1350px;
+  height:200px;
+  margin-left:-700px;
+  background-image: url(Footer.jpg);
+  background-size: 100% 100%;
+}
+.text-white{
+  color:whitesmoke;
+  font-weight: bold;
+}
+btn btn-primary btn-lg btn-floating mx-2{
+  size: 100px;
+}
+.fb{
+  width: 50px;
+  height:30px;
+  margin-top: 30px;
+  border-radius: 5px;
+  background: red;
+  color: black;
+}
+.yt{
+  width: 50px;
+  height:30px;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+.inst{
+  width: 50px;
+  height:30px;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+.tw{
+  width: 50px;
+  height:30px;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+.print{
+  width: 50px;
+  height:30px;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+
+.fa {
+  padding:3px;
+  font-size:20px;
+  width:15px;
+  text-align: center;
+  text-decoration:none;
+  background-color: transparent;
+}
+.downnav{
+  padding: 20px;
+  text-align: center;  
+}
+.logo{
+  margin-bottom:-80px;
+} 
+.uppernav{
+  background-color: yellowgreen;
+  margin-bottom: -80px;
+  height:70px;
+}
+.upper p{
+  margin-top:-30px;
+  margin-left:1080px;
+  font-size:16px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* styling search bar */
+.search input[type=text]{
+        width:200px;
+        height:25px;
+        border-radius:10px;
+        border:solid;
+    }
+         
+    .search{
+        float: right;
+        margin:-150px;
+        }     
+    .search button{
+        background-color:transparent;
+        color:blue;
+        float: right;
+        padding: 8px 14px;
+        margin-right:180px;
+        font-size: 12px;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+<body>
+  <div class="uppernav">
+    <ul>
+      <div class="upper">
+          <button type="button" class="fb" style="background-color:white;" >
+            <i class="fa fa-facebook-f"></i>
+          </button>
+          <button type="button" class="yt" style="background-color:white;">
+            <i class="fa fa-youtube"></i>
+          </button>
+          <button type="button" class="inst" style="background-color:white;">
+            <i class="fa fa-instagram"></i>
+          </button>
+          <button type="button" class="tw" style="background-color:white;">
+            <i class="fa fa-twitter"></i>
+          </button>
+          <button type="button" class="print" style="background-color:white;">
+            <i class="fa fa-pinterest"></i>
+          </button>
+          <p>Email:- saim14ali2001@gmail.com</p>
+          </div>
+      </ul>   
+    </div>
+        
+    <!--LOGO-->
+    <div class="logo">
+      <img src="Logo.png" alt="logo">
+    </div>
+    <!-- search bar right align -->
+    <div class="search">
+      <h2><i class="fa fa-phone" style="font-size:24px"></i>  +92 300 4127796</h2>
+      <form action="#">
+          <input type="text"
+              placeholder=" Search Courses"
+              name="search">
+              
+          <button>
+              <i class="fa fa-search"
+                  style="font-size: 18px;">
+              </i>
+          </button>
+      </form>
+  </div>
+
+    <!--TOP  NAVIGATION-->
+    <div class="nav">
+        <ul>
+            <div class="topnav">
+                <a class="active" href="#home">HOME</a>
+                <a href="#fruit">FRUITS</a>
+                <a href="#vegetable">VEGETABLE OIL</a>
+                <a href="#service">SERVICES</a>
+                <a href="#sustainability">SUSTAINABILITY</a>
+                <a href="#news">NEWS</a>
+                <a href="#gallery">GALLERY</a>
+                <a href="#contact">CONTACT US</a>
+              </div>
+          </ul>
+    </div>
+
+    <!--Banner Image-->
+    <div class="banner-image">
+        <div class="banner-text">
+          <h1>I am SAM ALI</h1>
+          <p>And It's a Agricultural Web Page..!</p>
+          <button>Click Me!</button>
+        </div>
+    </div>
+    <center><h2 style="color:indigo;">AGRICULTURE PRODUCTS</h2></center>
+    
+    <!--Cards-->
+    <div class="card1">
+      <br>
+      <!--Card 1-->
+      <img src="Kola_Nuts.jpg" alt="Card1" width="280px" height="170px">
+      <div class="container1">
+       <center><h3><b>Kola Nut</b></h3></center> 
+        <center><p>The term kola nut usually refers to the seeds of certain species of plant of the genus Cola, placed formerly in the cocoa family Sterculiaceae and now usually subsumed in the mallow family Malvaceae .</p> </center></div>
+
+        <!--Card 2-->
+        <div class="card2">
+        <img src="Gacillia_Nuts.jpg" alt="Card2" width="280px" height="170px">
+          <div class="container2">
+            <center><h3><b>Gacillia Nut</b></h3></center> 
+            <center><p>The term kola nut usually refers to the seeds of certain species of plant of the genus Cola, placed formerly in the cocoa family Sterculiaceae and now usually subsumed in the mallow family Malvaceae.</p></center>
+          </div>
+
+         <!--Card 3-->
+         <div class="card3">
+         <img src="Cocoa_Nuts.jpg" alt="Card3" width="280px" height="170px">
+        <div class="container3">
+        <center><h3><b>Cocoa Nut</b></h3></center> 
+         <center><p>The term kola nut usually refers to the seeds of certain species of plant of the genus Cola, placed formerly in the cocoa family Sterculiaceae and now usually subsumed in the mallow family Malvaceae.</p></center></div>
+      </div>
+    </div>
+    <br>
+    <br>
+
+    <!--Middle Banner-->
+    <div class="banner2-image">
+      <div class="banner2-text">
+        <h1>BEYOND JUST PLANTING A SEED....</h1>
+        <h3>WE CONTRIBUTE TO A BETTER FUTURE <br>  FOR OUR PEOPLE AND THE ENVIRONMENT</h3>
+        <br>
+        <!--About Us-->
+        <div class="about">
+          <div class="con1">
+            <center><h3><b>About us</b></h3></center> 
+            <center><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque facere tenetur odio sint laboriosam debitis id dolor. </p> </center><div>
+              <br>
+              <br>
+            <button onclick="myFunction()" id="myBtn">Read more</button>
+          </div>
+    
+        <!--History-->
+       <div class="history">
+       <div class="con2">
+       <center><h3><b>History</b></h3></center> 
+       <center><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae cupiditate iure necessitatibus aliquid explicabo!</p> </center></div>
+       <br>
+       <br>
+       <button onclick="myFunction()" id="myBtn">Read more</button>
+      </div>
+
+         <!--CSR-->
+         <div class="csr">
+         <div class="con3">
+         <center><h3><b>Corporate Special Responsibility</b></h3></center> 
+          <center><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt at ab blanditiis error repellat nostrum deleniti harum eveniet et hic!</p> </center></div>
+          <button onclick="myFunction()" id="myBtn">Read more</button>
+       </div>
+      
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--Our People-->
+    <div class="op">
+      <div class="con1">
+        <center><h3><b>Our People</b></h3></center> 
+        <center><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque facere tenetur odio sint laboriosam debitis id dolor. </p> </center><div>
+        <img src="Poeples.jpg" alt="Peoples" width="270px" height="170px">
+      </div>
+      <br>
+      <br>
+      <br>
+    
+      <!--Community Development-->
+        <div class="cd">
+        <div class="con2">
+        <center><h3><b>Community Development</b></h3></center> 
+        <center><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae cupiditate iure necessitatibus aliquid explicabo!</p> </center></div>
+        <img src="Community Development.jpg" alt="Com Dev" width="270px" height="175px">
+     </div>
+     
+     <!--Environment-->
+     <div class="en">
+     <div class="con3">
+     <center><h3><b>Environment</b></h3></center> 
+      <center><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae cupiditate iure necessitatibus aliquid explicabo!</p></center>
+      <img src="Enviornment.jpg" alt="Enviornment" width="270px" height="170px"></div>
+      
+     
+
+      <!--Sustainability-->
+      <div class="sa">
+      <div class="con3">
+      <center><h3><b>Sustainability</b></h3></center> 
+       <center><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae cupiditate iure necessitatibus aliquid explicabo!</p> </center></div>
+      <img src="Sustainability.jpg" alt="Sustainability" width="270px" height="170px">
+     </div>
+     
+   <br>
+   <br>
+   <div class="brands">
+    <h2>CERTIFICATIONS</h2>
+      <div class="container">
+      <div class="container-item">A</div>
+      <div class="container-item">B</div>
+      <div class="container-item">C</div>
+      <div class="container-item">D</div>
+      <div class="container-item">E</div>
+      </div>
+    <br>
+    </div>
+
+    <!--Footer-->
+    
+    <div class="footer">
+    <footer class="text-center text-lg-start">
+    <div class="b">
+      <button type="button" class="fb" style="background-color:white;" >
+        <i class="fa fa-facebook-f"></i>
+      </button>
+      <button type="button" class="yt" style="background-color:white;">
+        <i class="fa fa-youtube"></i>
+      </button>
+      <button type="button" class="inst" style="background-color:white;">
+        <i class="fa fa-instagram"></i>
+      </button>
+      <button type="button" class="tw" style="background-color:white;">
+        <i class="fa fa-twitter"></i>
+      </button>
+      <button type="button" class="print" style="background-color:white;">
+        <i class="fa fa-pinterest"></i>
+      </button>
+    </div>
+ 
+    <!--Footer bottom-->
+    <div class="bottom">
+      <ul>
+          <div class="downnav">
+              <a class="active" href="#home">HOME</a>
+              <a href="#fruit">FRUITS</a>
+              <a href="#vegetable">VEGETABLE OIL</a>
+              <a href="#service">SERVICES</a>
+              <a href="#sustainability">SUSTAINABILITY</a>
+              <a href="#news">NEWS</a>
+              <a href="#gallery">GALLERY</a>
+              <a href="#contact">CONTACT US</a>
+            </div>
+        </ul>
+  </div>
+    <br>
+    <!-- Copyright -->
+    <div class="copyright" style="background-color: transparent;">
+      Copyright © 2020 :
+      <a class="text-white" href="https://saim14.ali2001@gmail.com/">Notorious.com</a>
+    </div>
+    <!-- Copyright -->
+    </footer>
+    </div>
+    <!-- End of .container -->
+    </body>
+  </html>
